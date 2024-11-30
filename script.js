@@ -44,10 +44,10 @@ btn.addEventListener("click", function () {
         error4.innerHTML = "number can't be empty"
     }else if(number.value.length < 10 || number.value.length > 10){
         error4.style.display = "block"
-        error4.innerHTML = "number maximum have 10 digit"
-    }else if(isNaN(Number(number))){
+        error4.innerHTML = "Number must have exactly 10 digits"
+    }else if(isNaN(Number(number.value))){
         error4.style.display = "block"
-        error4.innerHTML = "Number should have number"
+        error4.innerHTML = "Number should contain only digits"
     }
     else{
         error1.innerHTML = ""
